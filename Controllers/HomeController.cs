@@ -8,4 +8,21 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Tutorial()
+    {
+        return View();
+    }
+    public IActionResult Inicio()
+    {
+        return View();
+    }
+    public IActionResult Habitacion(int sala, string clave) {
+        if(escape.ResolverSala(sala, clave)){
+            return View("habitacion"+clave);
+        }
+        else{
+            ViewBag.incorrecto="incorrecto";
+            return View("habitacion"+escape.GetEstadoJuego);
+        }
+    }
 }
