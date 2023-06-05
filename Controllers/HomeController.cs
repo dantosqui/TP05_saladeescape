@@ -14,15 +14,28 @@ public class HomeController : Controller
     }
     public IActionResult Inicio()
     {
-        return View();
+        ViewBag.incorrecto="";
+        escape.InicializarJuego();
+        return View("habitacion0");
     }
     public IActionResult Habitacion(int sala, string clave) {
         if(escape.ResolverSala(sala, clave)){
-            return View("habitacion"+clave);
+            ViewBag.incorrecto="";
+            if (escape.GetEstadoJuego()<4)
+                return View("habitacion"+escape.GetEstadoJuego());
+            else return View("victoria");    
         }
         else{
-            ViewBag.incorrecto="incorrecto";
-            return View("habitacion"+escape.GetEstadoJuego);
+            ViewBag.incorrecto="INCORRECTOO";
+            return View("habitacion"+escape.GetEstadoJuego());
         }
+    }
+    public IActionResult Carta()
+    {
+        return View();
+    }
+    public IActionResult Creditos()
+    {
+        return View();
     }
 }
