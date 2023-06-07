@@ -34,6 +34,10 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult VolverCarta(){
+        ViewBag.incorrecto="";
+        return View("habitacion0");
+    }
     public IActionResult Creditos()
     {
         return View();
