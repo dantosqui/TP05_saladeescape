@@ -1,9 +1,14 @@
 <h1>AMI</h1>
 <p>Te quedaste programando el TP05 hasta tarde y cuando te diste cuenta todo el mundo se habia ido; estas sola/o. Las luces estan apagadas y la puerta esta cerrada. Te acercas a una de las computadoras que dice: "Escapa mientras puedas, Object reference not set to an instance of an object te esta buscando." La puerta tiene un teclado que acepta cuatro caracteres. Parece que esta conectado a la cerradura.</p>
-<div class="habitacionImagen"><img src="https://campus.ort.edu.ar/static/archivos/usuarioperfil/88915" alt="imagen" width="100%" height="10%" usemap="#workmap"></div>
-<map name="workmap">
-    <area shape="rect" coords="200,200,500,500" alt="Computer" href='@Url.Action("Carta")'>
-</map>
+<div >
+    <div id="habitacionImagen">
+    <img src="~/imgs/ami.jpg" alt="imagen" >
+    <p id="clave">XIOE</p>
+    <a href='@Url.Action("Carta")' id="cart">
+        <img id=carta src="~/imgs/carta.png" alt="carta" width="300px">
+    </a>
+    </div>
+</div>
 
 <form action='@Url.Action("Habitacion", "Home")'>
 
