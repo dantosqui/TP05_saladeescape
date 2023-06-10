@@ -32,6 +32,19 @@ left: 0;
 bottom: 0%;
 }
 
+#habit2{
+  height:23px;
+  width: 64px;
+  padding: none;
+  top: 445px;
+  left:445px;
+  position: absolute;
+  font-size: 16px;
+}
+#habit2:focus{
+  padding: none;
+}
+
 footer p{
   display: flex;
   align-items: center;
@@ -134,3 +147,12 @@ input[type=submit]:hover{
   font-size: 30px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.secreto{
+  color: rgb(41, 34, 4);
+  transition: all ease 1s;
+}
+.secreto:hover{
+  background-color: black;
+}
+
