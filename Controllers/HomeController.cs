@@ -38,8 +38,15 @@ public class HomeController : Controller
         ViewBag.incorrecto="";
         return View("habitacion0");
     }
+    public IActionResult VolverGandalf(){
+        ViewBag.incorrecto="";
+        return View("habitacion3");
+    }
     public IActionResult Creditos()
     {
+        return View();
+    }
+    public IActionResult Pasar(){
         return View();
     }
 }
