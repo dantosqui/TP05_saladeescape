@@ -216,3 +216,15 @@ input[type=submit]:hover{
 #pasar:hover{
   animation-play-state:initial;
 }
+#cesar{
+  background: none;
+  border: none;
+  color: sienna;
+  padding: none;
+}
+
+audio{
+  position:absolute;
+  bottom: 100px;
+  left: 1px;
+}

@@ -4,7 +4,7 @@ class escape{
 
     public static void InicializarJuego(){
         numsala=0;
-        incognitas= new string[] {"cntj", "queso","string","sfhhwmzhoa"};
+        incognitas= new string[] {"cntj", "queso","string","dbphym"};
     }
     public static int GetEstadoJuego(){
         return numsala;
