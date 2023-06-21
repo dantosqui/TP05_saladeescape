@@ -1,3 +1,5 @@
+<button onclick="alert('Tocá el botón que dice pasar.......')"> Pista 1 </button>
+<button onclick="alert('suerte........')"> Pista 2 </button>
 <h1>MAS</h1>
 <p>Al abrir la puerta te encuentras a Binker. "Minimo cuatro salas", te dice. Quedas confundido y una trampilla se abre debajo tuyo. Caes a la parte del fondo del labo donde hay otra cerradura mas. "no podras pasar" dice gandalf.</p>
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*sZALxd8v3ByiaFdIhMrYHA.jpeg" alt="" height="300px">
@@ -13,6 +15,11 @@
 
 <p style="color:red">@ViewBag.incorrecto</p>
 
-<div id="pasardiv">
     <a id="pasar" href='@Url.Action("Pasar")'>pasar</a>
-</div>
+
+
+<audio id="musicademiedo" controls autoplay>
+  
+  <source src="~/mp3/Metaphysik.mp3" type="audio/mpeg">
+su navegador no tiene soporte para audio
+</audio>
