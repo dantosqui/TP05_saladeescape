@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  #container {
+    height: 100%;
+    overflow: hidden;
+  }
+  #credits {
+    overflow-y: scroll;
+    height: 100%;
+    animation: scrollCredits linear infinite;
+    animation-duration: 420s;
+  }
+  @keyframes scrollCredits {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+  #musicademiedo{
+    display: none;
+  }
+  #eitileda{
+    position:absolute;
+    bottom:100px;
+    left: 1px;
+    display: block;
+  }

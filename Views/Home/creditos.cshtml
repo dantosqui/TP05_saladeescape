@@ -1,33 +1,115 @@
-<h1>SALA DE ESCAPE: INFO</h1>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/creditos.css">
+</head>
+  
+  <div id="container">
+    <div id="credits">
+      <h1>SALA DE ESCAPE: INFO</h1>
 
-<h2>Produccion:</h2>
+      <h2>Produccion:</h2>
+      <h3>Zarek</h3>
+      <h3>Dante</h3>
+
+      <h2>Diseño:</h2>
+      <h3>Zarek</h3>
+      <h3>Zarek</h3>
+      <h3>Dante</h3>
+
+      <h2>Control de calidad:</h2>
+      <h3>Zarek</h3>
+
+      <h2>Guion</h2>
+      <h3>Dante</h3>
+
+      <h2>Marketing</h2>
+      <h3>Zarek</h3>
+      <h3>Dante</h3>
+
+      <h2>Recursos humanos:</h2>
+      <h3>Toby</h3>
+
+      <h2>Vestimenta:</h2>
+      <h3>Zarek</h3>
+
+      <h2>Desarrollo:</h2>
+      <h3>Zarek</h3>
+      <h3>Dante</h3>
+      <h3>Dante</h3>
+
+      <h2>Efectos visuales:</h2>
+      <h3>Dante</h3>
+
+      <h2>Direccion:</h2>
+      <h3>Zarek</h3>
+      <h3>Dante</h3>
+
+      <h2>Actuacion:</h2>
+      <h3>Gandalf - Gandalf</h3>
+
+      <h2>Testing:</h2>
+      <h3>noah</h3>
+      <h3>martin</h3>
+      <h3>cañete</h3>
+    
+      <h2>Camara:</h2>
+      <h3>Dante</h3>
+
+<h2>Sonido:</h2>
 <h3>Zarek</h3>
-<h3>Dante</h3>
 
-<h2>Diseño:</h2>
+<h2>Fisicas:</h2>
 <h3>Zarek</h3>
+
+<h2>Diseño de nivel:</h2>
+<h3>Dante</h3>
 <h3>Zarek</h3>
-<h3>Dante</h3>
 
-<h2>Desarrollo:</h2>
-<h3>Zarek</h3>
-<h3>Dante</h3>
-<h3>Dante</h3>
+      <h2>Produccion:</h2>
+      <h3>Binker</h3>
 
-<h2>Direccion:</h2>
-<h3>Zarek</h3>
-<h3>Dante</h3>
+      <h2>Direccion creativa:</h2>
+      <h3>Zarek</h3>
+      <h3>Dante</h3>
 
-<h2>Actuacion:</h2>
-<h3>Gandalf - Gandalf</h3>
+      <h2>Banda sonora:</h2>
+      <h3>kevin mcleod</h3>
+      <h3>serugiran</h3>
 
-<h2>Testing:</h2>
-<h3>noah</h3>
-<h3>martin</h3>
+    <h2></h2>
 
-<h2>Produccion:</h2>
-<h3>Binker</h3>
+      <h2>Animacion de creditos:</h2>
+      <h3>ChatGPT</h3>
 
-<h2>Banda sonora:</h2>
-<h3>kevin mcleod</h3>
-<h3>serugiran</h3>
+    </div>
+  </div>
+
+<audio id="eitileda" controls autoplay>
+  
+  <source src="~/mp3/EitiLeda.mp3" type="audio/mpeg">
+su navegador no tiene soporte para audio
+</audio>
+
+ <script>
+    var container = document.getElementById("container");
+
+    // Disable scrolling
+    function disableScroll() {
+      var x = window.scrollX;
+      var y = window.scrollY;
+      window.onscroll = function() {
+        window.scrollTo(x, y);
+      };
+    }
+
+    // Enable scrolling
+    function enableScroll() {
+      window.onscroll = null;
+    }
+
+    // Disable scrolling when the page loads
+    disableScroll();
+
+    // Enable scrolling after the animation finishes
+    var animationDuration = 60; // seconds
+    setTimeout(enableScroll, animationDuration * 1000);
+  </script>
